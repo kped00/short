@@ -2,6 +2,8 @@
 URL Shortener, no auth or anything yet.
 My first Elixir project, don't expect much.
 
+Requires a working Postgres repo, set it in config/dev.exs
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
