@@ -1,4 +1,6 @@
 # Short
+URL Shortener, no auth or anything yet.
+My first Elixir project, don't expect much.
 
 To start your Phoenix server:
 
