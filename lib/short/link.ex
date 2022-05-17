@@ -15,7 +15,7 @@ defmodule Short.Link do
     link
     |> cast(attrs, [:owner, :customurl, :url])
     |> validate_required([:customurl, :url])
-    |> validate_format(:url, ~r/^https?:\/\//)
-    |> validate_format(:customurl, ~r/^[a-zA-Z0-9_\-]+$/)
+    |> validate_format(:url, ~r/^https?:\/\//, message: "needs to be a http(s) url")
+    |> validate_format(:customurl, ~r/^[a-zA-Z0-9_\-]+$/, message: "cannot use characters other than alphanumeric, underscores, and dashes")
   end
 end
